@@ -1,37 +1,35 @@
 body {
-    background-image: url("3Xfn9HCVd5frs24U4Z0XMQ7B2vexrajX4LBzWdHXhPc.webp");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size:cover ;
-    height: 100%;
-  }
+  background-image: url("images/3Xfn9HCVd5frs24U4Z0XMQ7B2vexrajX4LBzWdHXhPc.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
 
 h1 {
- color: white;
- margin-bottom: 5%;
-text-align: center;
-}  
-h2{
   color: white;
+  margin-bottom: 5%;
+  text-align: center;
 }
+
 p {
-    color: white;
-    font-size: 1.2em;
-    line-height: 1.6;
-    font-family: 'Times New Roman', Times, serif;
-    outline-style: groove;
-    outline-color: #770000;
-    
-    
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  outline-style: groove;
+  outline-color: #770000;
 }
+
 footer {
-    color: white; /* Witte tekst */
-    text-align: center ; /* Centraal uitlijnen */
-    padding: 10px; /* Padding rondom de tekst */
-    margin-top: auto; 
-    padding-top: 25%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  padding-top: 25%;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -50,19 +48,18 @@ li a {
   text-align: center;
   padding: 14px 50px;
   text-decoration: none;
-  align-items: center;
 }
 
 li a:hover {
   background-color: #111;
 }
 
-img{
+img {
   width: 15%;
   height: auto;
 }
 
-.afstand{
+.afstand {
   margin-top: 5%;
 }
 
@@ -108,14 +105,108 @@ img{
   background-color: #550000;
 }
 
-.ul2{
-  color: white 
-  
-}
-.li2{
-  list-style-type: disc;
-  color: white
-}
-.li3{
+.ul2 {
   color: white;
+}
+
+.li2 {
+  list-style-type: disc;
+  color: white;
+}
+
+.li3 {
+  color: white;
+}
+
+/* Menu styling */
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255, 0, 0, 0.7);
+  position: fixed; /* Zorg ervoor dat het menu bovenaan de pagina zit */
+  top: 0;
+  left: 0; /* Start buiten het scherm aan de linkerkant */
+  width: 250px; /* Bepaal de breedte van het menu */
+  height: 100%;
+  transform: translateX(-100%); /* Verberg het menu buiten het scherm */
+  transition: transform 0.3s ease-in-out; /* Animatie van het menu */
+  flex-direction: column;
+  display: flex;
+}
+
+ul.menu li {
+  padding: 15px;
+  text-align: center;
+}
+
+ul.menu li a {
+  padding: 14px;
+}
+
+ul.menu li a:hover {
+  background-color: #000000;
+}
+
+/* Als het menu geactiveerd is, laat het dan zien */
+ul.menu.active {
+  transform: translateX(0); /* Het menu schuift in beeld */
+}
+
+/* Hamburgerknop styling */
+.hamburger {
+  display: block;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Verberg het menu standaard */
+ul.menu li {
+  padding: 10px 20px;
+}
+
+ul.menu li a {
+  padding: 14px;
+}
+
+ul.menu li a:hover {
+  background-color: #000000;
+}
+/* Zorg ervoor dat de intro-container de volledige pagina vult */
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Vul het hele scherm */
+  background-color: black;
+}
+
+.logo {
+  width: 30%; /* Pas dit aan naar je wens */
+  opacity: 0;
+  animation: fadeIn 3s forwards; /* Voeg een fade-in animatie toe */
+}
+
+/* Fade-in animatie */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+/* Initialiseer het fade effect */
+.fade-out {
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Deze overgang zorgt voor een fade-out effect */
+}
+
+.fade-out.hidden {
+  opacity: 0;
 }
