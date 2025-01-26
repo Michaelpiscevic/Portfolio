@@ -14,10 +14,11 @@
             <li><a href="studie.html">Studie</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">&#9776;</button>
     </header>
     <main>
         <h1>Welkom op mijn Portfolio!</h1>
-        <img src="WhatsApp Image 2025-01-25 at 23.16.07.jpeg" alt="Piscevic">
+        <img src="images/WhatsApp Image 2025-01-25 at 23.16.07.jpeg" alt="Piscevic">
         <section class="intro">
             <p>
                 Mijn naam is Michael Piscevic, en dit is mijn persoonlijke portfolio. Hier kun je alles ontdekken over mijn achtergrond, vaardigheden, en toekomstplannen.  
@@ -33,10 +34,19 @@
         </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2025 Michael Piscevic - Alle rechten voorbehouden.</p>
     </footer>
+    <script>
+        // Selecteer de hamburgerknop en het menu
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.querySelector(".menu");
+    
+        // Voeg een eventlistener toe voor het klikken op de hamburgerknop
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active"); // Toggle de 'active' klasse voor het menu
+        });
+    </script>
 </body>
 </html>
 </body>
