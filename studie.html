@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studie</title>
+    <title>Document</title>
     <link rel="stylesheet" href="cssport.css">
 </head>
 <body>
@@ -14,6 +14,7 @@
             <li><a href="studie.html">Studie</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">&#9776;</button>
     </header>
     <main>
         <h1>Mijn Studie</h1>
@@ -44,5 +45,15 @@
     <footer>
         <p>&copy; 2025 Michael Piscevic - Alle rechten voorbehouden.</p>
     </footer>
+    <script>
+        // Selecteer de hamburgerknop en het menu
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.querySelector(".menu");
+    
+        // Voeg een eventlistener toe voor het klikken op de hamburgerknop
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active"); // Toggle de 'active' klasse voor het menu
+        });
+    </script>
 </body>
 </html>
