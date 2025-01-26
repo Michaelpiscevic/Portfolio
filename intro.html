@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introductie</title>
+    <link rel="stylesheet" href="cssport.css">
+    <style>
+        /* Voeg de fade-out effect styling toe */
+        .fade-out {
+            opacity: 1;
+            transition: opacity 1s ease-out;
+        }
+
+        .fade-out.hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container fade-out">
+        <img src="images/MP.png" alt="MP Logo" class="logo">
+    </div>
+
+    <script>
+        // Na 3 seconden ga je automatisch naar de homepage
+        setTimeout(function() {
+            // Voeg de fade-out klasse toe aan de intro-container om het logo langzaam te laten verdwijnen
+            const introContainer = document.querySelector('.intro-container');
+            introContainer.classList.add('hidden');
+            
+            // Wacht 1 seconde (de tijd van de fade-out animatie) en redirect dan naar de index-pagina
+            setTimeout(function() {
+                window.location.href = 'index.html'; // Dit is je hoofdpagina
+            }, 1000); // 1000ms = 1 seconde (dezelfde tijd als de fade-out animatie)
+        }, 2000); // 3000ms = 3 seconden
+    </script>
+</body>
+</html>
