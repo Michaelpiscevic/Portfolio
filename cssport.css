@@ -1,28 +1,24 @@
-body {
-  background-image: url("3Xfn9HCVd5frs24U4Z0XMQ7B2vexrajX4LBzWdHXhPc.webp");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-}
 
 h1 {
-  color: white;
+  color: black;
   margin-bottom: 5%;
   text-align: center;
 }
+strong {
+  font-size: 1.5em;
+}
 
 p {
-  color: white;
+  color: black;
   font-size: 1.2em;
   line-height: 1.6;
   font-family: sans-serif;
+  text-align: left;
  
 }
 
 footer {
-  color: white;
+  color: grey;
   text-align: center;
   padding: 10px;
   margin-top: auto;
@@ -43,7 +39,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 50px;
   text-decoration: none;
@@ -54,8 +50,14 @@ li a:hover {
 }
 
 img {
-  width: 15%;
-  height: auto;
+  width: 250px; /* Pas de grootte aan naar wens */
+  height: 250px; /* Zorg ervoor dat breedte en hoogte gelijk zijn */
+  border-radius: 50%;
+  object-fit: cover; /* Zorgt ervoor dat de afbeelding goed past binnen het ronde kader */
+  display: block;
+  margin: auto; /* Centraal uitlijnen */
+  
+  
 }
 
 .afstand {
@@ -91,7 +93,7 @@ img {
 .contact-form button {
   width: 100%;
   padding: 10px;
-  background-color: #770000;
+  background-color: blue;
   color: white;
   border: none;
   border-radius: 5px;
@@ -101,7 +103,7 @@ img {
 }
 
 .contact-form button:hover {
-  background-color: #550000;
+  background-color: purple;
 }
 
 .ul2 {
@@ -123,7 +125,7 @@ ul.menu {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(128, 0, 128, 0.7); /* Paars met 70% transparantie */
   position: fixed; /* Zorg ervoor dat het menu bovenaan de pagina zit */
   top: 0;
   left: 0; /* Start buiten het scherm aan de linkerkant */
@@ -159,7 +161,7 @@ ul.menu.active {
   font-size: 28px;
   background: none;
   border: none;
-  color: white;
+  color: purple;
   cursor: pointer;
   margin: 10px;
 }
@@ -247,3 +249,27 @@ ul.menu li a:hover {
   display: block;
   margin: auto;
 }
+
+p a:link, a:visited {
+  background-color: purple;
+  color: white;
+  padding: 3px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+p a:hover, a:active {
+  background-color: purple;
+}
+#lottie-background {
+  position: fixed;  /* Zorgt ervoor dat de animatie altijd op de achtergrond blijft */
+  top: 0;
+  left: 0;
+  width: 100vh;  /* Volledige breedte */
+  height: 100vh; /* Volledige hoogte */
+  z-index: -1;   /* Zet de animatie achter alle andere elementen */
+  pointer-events: none; /* Voorkomt dat de animatie kliks blokkeert */
+}
+
+
