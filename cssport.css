@@ -250,18 +250,6 @@ ul.menu li a:hover {
   margin: auto;
 }
 
-p a:link, a:visited {
-  background-color: purple;
-  color: white;
-  padding: 3px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-p a:hover, a:active {
-  background-color: purple;
-}
 #lottie-background {
   position: fixed;  /* Zorgt ervoor dat de animatie altijd op de achtergrond blijft */
   top: 0;
